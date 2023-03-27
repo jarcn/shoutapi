@@ -16,3 +16,21 @@ type ShortenReq struct {
 type ShortenResp struct {
 	Shorten string `json:"shorten"`
 }
+
+type AddReq struct {
+	Book  string `form:"book"`
+	Price int64  `form:"price"`
+}
+
+type AddResp struct {
+	Ok bool `json:"ok"`
+}
+
+type CheckReq struct {
+	Book string `form:"book"`
+}
+
+type CheckResp struct {
+	Found bool  `json:"found"`
+	Price int64 `json:"price"`
+}

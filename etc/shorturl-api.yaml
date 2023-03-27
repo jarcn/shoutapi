@@ -6,3 +6,13 @@ Transform:
     Hosts:
       - 106.55.104.223:2379
     Key: transform.rpc
+Add:
+  Etcd:
+    Hosts:
+      - 106.55.104.223:2379
+    Key: add.rpc
+Check:
+  Etcd:
+    Hosts:
+      - 106.55.104.223:2379
+    Key: check.rpc
